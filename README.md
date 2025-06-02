@@ -1,1 +1,2 @@
-fodase
+contests: CODEFORCES, ATCODER
+

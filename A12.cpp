@@ -8,9 +8,9 @@ vector<int> adj[N];
 vector<bool> vis;
 vector<int> pai;
 
-void dfs(int u){
+void dfs(int u) {
     vis[u] = true;
-    for(int v : adj[u]){
+    for(int v:adj[u]){
         if(!vis[v]){
             pai[v] = u;
             dfs(v);
@@ -18,10 +18,10 @@ void dfs(int u){
     }
 }
 
-void solve(){
+void solve() {
     int n;cin>>n>>a>>b;
 
-    for(int i= 0; i <=n;i++){
+    for(int i= 0;i <=n;i++){
         adj[i].clear();
     }
     vis.assign(n + 1, false);
